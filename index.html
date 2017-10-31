@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Half Moon Run</title>
+	<link rel="icon" href="images/logo2.png" type="image/png" sizes="16x16">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Links de Bootstrap y CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  	<!-- google fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  	<!-- fontawesome -->
+  	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  	<!-- Smooth Scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- NAVBAR -->
+	<div class="pos-f-t">
+  		<div class="collapse" id="navbarToggleExternalContent">
+	    	<div class="bg-light p-4">
+	      		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    				<div class="navbar-nav">
+	      					<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+	      					<a class="nav-item nav-link" href="#about">About</a>
+						    <a class="nav-item nav-link" href="#listen">Listen</a>
+						    <a class="nav-item nav-link disabled" href="#">Tour</a>
+	    				</div>
+  					</div>
+				</nav>
+	    	</div>
+  		</div>
+  	<nav id="home" class="nav2 navbar navbar-light bg-light">
+    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    	</button>
+  	</nav>
+	</div>
+<!-- NAV ENDS -->
+	
+	<div class="bgimg">
+	</div>
+
+	<div class="container">
+		<div id="about">
+			<img class="logo" src="images/logo.jpg">
+			<h2 class="abtitle">Half Moon Run</h2>
+			<p class="abtext">Half Moon Run is a Canadian indie rock band based in Montreal, Quebec. The band members, who previously lived in Comox, British Columbia and in Ottawa, Ontario are: Devon Portielje on vocals, guitar and percussion; Conner Molander on vocals, guitar and keyboard; Dylan Phillips on vocals, drums and keyboard; and Isaac Symonds on vocals, percussions, mandolin, keyboard and guitar. The group is known for their heavy use of percussion, and for playing multiple instruments during live performances.</p>
+		</div>
+	</div>
+
+	<div id="listen" class="container-fluid listen">
+		<h2 class="lititle">Listen Dark Eyes</h2>
+		<h5 class="litext">our new album is out now, take a look!</h5>
+		
+		<iframe src="https://open.spotify.com/embed/album/1h0JzrOSEyEldBJOBMj9Ge" width="400" height="552" frameborder="0" allowtransparency="true"></iframe>
+
+		<div class="audio">
+			<audio autoplay controls>
+	  			<source src="audio/fire-escape.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+	
+	</div>
+
+	<div class="container-fluid footer">
+			<p class="footitle">Manuel Lora All Rights Reserved 2017</p>
+	</div>
+
+
+	<!-- Scripts principales Bootstrap y JS -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- Smooth Scroll -->
+	<script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+</body>
+</html>
